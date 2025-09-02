@@ -98,7 +98,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-8"
         >
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
             <span className="block md:inline">For Every Disease,</span>
             <span className="block md:inline md:ml-2">There&apos;s a Treatment</span>
           </h1>
