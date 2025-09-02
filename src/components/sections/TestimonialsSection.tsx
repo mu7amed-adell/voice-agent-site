@@ -2,7 +2,7 @@
 
 import { motion, PanInfo } from 'framer-motion';
 import { useInView } from 'framer-motion';
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, Star, Quote } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -55,11 +55,11 @@ export default function TestimonialsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
 
-  const nextTestimonial = () => {
+  const nextTestimonial = useCallback(() => {
     if (!isDragging) {
       setCurrentIndex((prev) => (prev + 1) % testimonials.length);
     }
-  };
+  }, [isDragging, testimonials.length]);
 
   const prevTestimonial = () => {
     if (!isDragging) {
