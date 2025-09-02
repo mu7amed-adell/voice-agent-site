@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
     if (!isDragging) {
       setCurrentIndex((prev) => (prev + 1) % testimonials.length);
     }
-  }, [isDragging, testimonials.length]);
+  }, [isDragging]);
 
   const prevTestimonial = () => {
     if (!isDragging) {

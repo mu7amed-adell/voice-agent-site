@@ -43,7 +43,7 @@ export default function HeroSection() {
             />
 
             {/* Floating particles */}
-            {[...Array(50)].map((_, i) => {
+            {[...Array(25)].map((_, i) => {
               const left = mounted ? Math.random() * 100 : 50;
               const top = mounted ? Math.random() * 100 : 50;
               const duration = mounted ? Math.random() * 3 + 2 : 3;
