@@ -141,8 +141,8 @@ export default function DemoVoiceAgent() {
                   variant="gradient"
                   size="lg"
                   onClick={() => {
-                    if (typeof window !== 'undefined' && (window as any).openConsultationBooking) {
-                      (window as any).openConsultationBooking();
+                    if (typeof window !== 'undefined' && window.openConsultationBooking) {
+                      window.openConsultationBooking();
                     }
                   }}
                 >

@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Stethoscope, Zap, ArrowRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 export default function CaseAnalogySection() {
   const ref = useRef(null);

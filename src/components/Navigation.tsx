@@ -33,12 +33,12 @@ export default function Navigation() {
   }, []);
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
+    const element = document.querySelector(href) as HTMLElement | null;
     if (element) {
       const offsetTop = element.offsetTop - 80; // Account for fixed header
       window.scrollTo({
         top: offsetTop,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
     setIsOpen(false);
@@ -114,8 +114,8 @@ export default function Navigation() {
                   variant="gradient"
                   size="sm"
                   onClick={() => {
-                    if (typeof window !== 'undefined' && (window as any).openConsultationBooking) {
-                      (window as any).openConsultationBooking();
+                    if (typeof window !== 'undefined' && window.openConsultationBooking) {
+                      window.openConsultationBooking();
                     }
                   }}
                   className="shadow-md hover:shadow-lg transition-shadow duration-200"
@@ -229,8 +229,8 @@ export default function Navigation() {
                     size="lg"
                     className="w-full shadow-md hover:shadow-lg transition-shadow duration-200"
                     onClick={() => {
-                      if (typeof window !== 'undefined' && (window as any).openConsultationBooking) {
-                        (window as any).openConsultationBooking();
+                      if (typeof window !== 'undefined' && window.openConsultationBooking) {
+                        window.openConsultationBooking();
                       }
                     }}
                     aria-label="Open consultation booking form"

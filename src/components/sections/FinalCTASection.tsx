@@ -142,8 +142,8 @@ export default function FinalCTASection() {
             variant="gradient"
             size="xl"
             onClick={() => {
-              if (typeof window !== 'undefined' && (window as any).openConsultationBooking) {
-                (window as any).openConsultationBooking();
+              if (typeof window !== 'undefined' && window.openConsultationBooking) {
+                window.openConsultationBooking();
               }
             }}
             className="w-full sm:w-auto min-w-[240px]"

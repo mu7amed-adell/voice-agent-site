@@ -67,7 +67,7 @@ export default function TestimonialsSection() {
     }
   };
 
-  const handleDragEnd = (event: any, info: PanInfo) => {
+  const handleDragEnd = (event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
     setIsDragging(false);
     const swipeThreshold = 50;
 
@@ -89,7 +89,7 @@ export default function TestimonialsSection() {
     }, 8000); // Change testimonial every 8 seconds
 
     return () => clearInterval(interval);
-  }, [currentIndex, isDragging]);
+  }, [currentIndex, isDragging, nextTestimonial]);
 
   return (
     <section ref={ref} id="testimonials" className="py-20 px-6 bg-gradient-to-b from-slate-50 to-white dark:from-slate-800 dark:to-slate-900">

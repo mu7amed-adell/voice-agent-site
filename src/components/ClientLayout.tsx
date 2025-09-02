@@ -4,10 +4,16 @@ import { useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import ConsultationBooking from '@/components/ConsultationBooking';
 import { useConsultationBooking } from '@/hooks/useConsultationBooking';
-import { Zap, Github, Linkedin } from 'lucide-react';
+
 
 interface ClientLayoutProps {
   children: React.ReactNode;
+}
+
+declare global {
+  interface Window {
+    openConsultationBooking?: () => void;
+  }
 }
 
 export default function ClientLayout({ children }: ClientLayoutProps) {
@@ -16,7 +22,7 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
   // Make the booking functions available globally for easy access
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      (window as any).openConsultationBooking = openBooking;
+      window.openConsultationBooking = openBooking;
     }
   }, [openBooking]);
 

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ChevronLeft, ChevronRight, Calendar, Clock, User, Mail, Phone, MessageSquare, Check } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Calendar, Clock, User, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface ConsultationBookingProps {
@@ -106,26 +106,7 @@ export default function ConsultationBooking({ isOpen, onClose }: ConsultationBoo
     return phoneRegex.test(phone.replace(/[\s\-\(\)]/g, ''));
   };
 
-  const validateForm = () => {
-    const newErrors: Record<string, string> = {};
 
-    if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
-    }
-
-    if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
-    } else if (!validateEmail(formData.email)) {
-      newErrors.email = 'Please enter a valid email address';
-    }
-
-    if (formData.phone && !validatePhone(formData.phone)) {
-      newErrors.phone = 'Please enter a valid phone number';
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -169,8 +150,9 @@ export default function ConsultationBooking({ isOpen, onClose }: ConsultationBoo
       } else {
         throw new Error(result.message || 'Failed to book consultation');
       }
-    } catch (error: any) {
-      setSubmitError(error.message || 'Something went wrong. Please try again.');
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : 'Something went wrong. Please try again.';
+      setSubmitError(errorMessage);
     } finally {
       setIsLoading(false);
     }

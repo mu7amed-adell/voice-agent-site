@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
 
 export default function HeroSection() {
   const [isMobile, setIsMobile] = useState(false);
