@@ -103,7 +103,7 @@ export default function TestimonialsSection() {
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
             Success Stories from
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> AI Transformation</span>
+            <span className="bg-gradient-to-r from-blue-600 to-cyan-400 bg-clip-text text-transparent"> AI Transformation</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Don&apos;t just take our word for it. Hear from business leaders who&apos;ve transformed their operations with our AI solutions.

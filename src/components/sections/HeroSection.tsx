@@ -33,10 +33,10 @@ export default function HeroSection() {
               className="absolute inset-0 opacity-20"
               animate={{
                 background: [
-                  'radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.3) 0%, transparent 50%)',
-                  'radial-gradient(circle at 80% 20%, rgba(147, 51, 234, 0.3) 0%, transparent 50%)',
-                  'radial-gradient(circle at 40% 80%, rgba(16, 185, 129, 0.3) 0%, transparent 50%)',
-                  'radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.3) 0%, transparent 50%)',
+                  'radial-gradient(circle at 20% 50%, rgba(30, 58, 138, 0.4) 0%, transparent 50%)',
+                  'radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.4) 0%, transparent 50%)',
+                  'radial-gradient(circle at 40% 80%, rgba(6, 182, 212, 0.4) 0%, transparent 50%)',
+                  'radial-gradient(circle at 20% 50%, rgba(30, 58, 138, 0.4) 0%, transparent 50%)',
                 ],
               }}
               transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
@@ -78,9 +78,9 @@ export default function HeroSection() {
             className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800"
             animate={{
               background: [
-                'linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%)',
-                'linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e293b 100%)',
-                'linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%)',
+                'linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0f172a 100%)',
+                'linear-gradient(135deg, #1e3a8a 0%, #7c3aed 50%, #1e3a8a 100%)',
+                'linear-gradient(135deg, #0f172a 0%, #06b6d4 50%, #0f172a 100%)',
               ],
             }}
             transition={{ duration: 6, repeat: Infinity, ease: 'linear' }}
@@ -98,10 +98,10 @@ export default function HeroSection() {
           className="mb-8"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
-            <span className="block md:inline">For Every Disease,</span>
-            <span className="block md:inline md:ml-2">There&apos;s a Treatment</span>
+            <span className="block md:inline">NeuraCure:</span>
+            <span className="block md:inline md:ml-2">AI-Powered Solutions</span>
           </h1>
-          <h2 className="text-xl md:text-xl lg:text-2xl text-blue-300 font-light">
+          <h2 className="text-xl md:text-xl lg:text-2xl text-cyan-300 font-light">
             For Every Inefficiency, There&apos;s an AI Solution
           </h2>
         </motion.div>

@@ -13,7 +13,7 @@ const solutions = [
     icon: '🤖',
     description: 'Streamline repetitive tasks with AI-powered workflows that learn and adapt to your business processes.',
     features: ['Process optimization', 'Smart scheduling', 'Error reduction', '24/7 operation'],
-    color: 'from-blue-500 to-cyan-500'
+    color: 'from-blue-600 to-cyan-400'
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const solutions = [
     icon: '📊',
     description: 'Harness the power of data to forecast trends, identify opportunities, and make data-driven decisions.',
     features: ['Revenue forecasting', 'Customer behavior analysis', 'Risk assessment', 'Performance metrics'],
-    color: 'from-purple-500 to-pink-500'
+    color: 'from-purple-600 to-blue-600'
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const solutions = [
     icon: '🎤',
     description: 'Transform voice interactions with advanced speech recognition, natural language processing, and conversational AI.',
     features: ['Voice assistants', 'Call analytics', 'Transcription services', 'Multi-language support'],
-    color: 'from-green-500 to-teal-500'
+    color: 'from-cyan-400 to-blue-600'
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const solutions = [
     icon: '⚡',
     description: 'Tailored AI implementations designed specifically for your unique business challenges and objectives.',
     features: ['Bespoke models', 'API integrations', 'Scalable architecture', 'Ongoing optimization'],
-    color: 'from-orange-500 to-red-500'
+    color: 'from-purple-600 to-cyan-400'
   }
 ];
 
@@ -62,7 +62,7 @@ export default function SolutionsGrid() {
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
             AI Solutions for Every
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Business Need</span>
+            <span className="bg-gradient-to-r from-blue-600 to-cyan-400 bg-clip-text text-transparent"> Business Need</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
             From automation to predictive insights, our comprehensive suite of AI solutions addresses the most common business inefficiencies with precision and scale.

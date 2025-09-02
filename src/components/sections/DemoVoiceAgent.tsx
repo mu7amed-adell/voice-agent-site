@@ -97,7 +97,7 @@ export default function DemoVoiceAgent() {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               Experience the Future of
-              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"> Voice AI</span>
+              <span className="bg-gradient-to-r from-blue-600 to-cyan-400 bg-clip-text text-transparent"> Voice AI</span>
             </motion.h2>
 
             <motion.p
@@ -146,7 +146,7 @@ export default function DemoVoiceAgent() {
                     }
                   }}
                 >
-                  Schedule Voice Agent Demo
+                  Try Our Demo Voice Agent
                 </Button>
               </motion.div>
             )}
@@ -183,7 +183,7 @@ export default function DemoVoiceAgent() {
                       }
                     }}
                   >
-                    Tap to Try
+                    Try Demo Voice Agent
                   </Button>
                 )}
               </div>

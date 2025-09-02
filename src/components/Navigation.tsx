@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Zap, Users, Grid3X3, MessageSquare, Play, Stethoscope, Mail } from 'lucide-react';
+import { Menu, X, Users, Grid3X3, MessageSquare, Play, Stethoscope, Mail } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 
@@ -65,17 +65,24 @@ export default function Navigation() {
               whileHover={{ scale: 1.02 }}
             >
               <div className="relative">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center shadow-md">
-                  <Zap className="w-5 h-5 text-white" />
+                <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center shadow-md">
+                  <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="2" fill="currentColor"/>
+                    <circle cx="18" cy="6" r="2" fill="currentColor"/>
+                    <circle cx="6" cy="18" r="2" fill="currentColor"/>
+                    <circle cx="18" cy="18" r="2" fill="currentColor"/>
+                    <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                    <path d="M8 6H16M8 18H10M14 18H16M6 8V10M6 14V16M18 8V10M18 14V16M10 12H14" stroke="currentColor" strokeWidth="1.5"/>
+                  </svg>
                 </div>
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full border-2 border-white dark:border-slate-900"></div>
+                <div className="absolute -top-1 -right-1 w-3 h-3 bg-cyan-400 rounded-full border-2 border-white dark:border-slate-900"></div>
               </div>
               <div>
                 <span className="font-bold text-lg text-gray-900 dark:text-white">
-                  AI Medicine
+                  NeuraCure
                 </span>
                 <div className="text-xs text-gray-500 dark:text-gray-400 -mt-1">
-                  Smart Solutions
+                  AI Solutions
                 </div>
               </div>
             </motion.div>
@@ -121,7 +128,7 @@ export default function Navigation() {
                   className="shadow-md hover:shadow-lg transition-shadow duration-200"
                   aria-label="Open consultation booking form"
                 >
-                  Get Started
+                  Book Free Diagnosis
                 </Button>
               </motion.div>
             </div>
@@ -171,17 +178,24 @@ export default function Navigation() {
               <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-slate-700">
                 <div className="flex items-center space-x-3">
                   <div className="relative">
-                    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center shadow-md">
-                      <Zap className="w-5 h-5 text-white" />
+                    <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center shadow-md">
+                      <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="2" fill="currentColor"/>
+                        <circle cx="18" cy="6" r="2" fill="currentColor"/>
+                        <circle cx="6" cy="18" r="2" fill="currentColor"/>
+                        <circle cx="18" cy="18" r="2" fill="currentColor"/>
+                        <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                        <path d="M8 6H16M8 18H10M14 18H16M6 8V10M6 14V16M18 8V10M18 14V16M10 12H14" stroke="currentColor" strokeWidth="1.5"/>
+                      </svg>
                     </div>
-                    <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full border-2 border-white dark:border-slate-900"></div>
+                    <div className="absolute -top-1 -right-1 w-3 h-3 bg-cyan-400 rounded-full border-2 border-white dark:border-slate-900"></div>
                   </div>
                   <div>
                     <span className="font-bold text-lg text-gray-900 dark:text-white">
-                      AI Medicine
+                      NeuraCure
                     </span>
                     <div className="text-xs text-gray-500 dark:text-gray-400 -mt-1">
-                      Smart Solutions
+                      AI Solutions
                     </div>
                   </div>
                 </div>
@@ -235,7 +249,7 @@ export default function Navigation() {
                     }}
                     aria-label="Open consultation booking form"
                   >
-                    Get Started
+                    Book Free Diagnosis
                   </Button>
                 </motion.div>
               </div>

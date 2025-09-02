@@ -35,7 +35,7 @@ export default function CaseAnalogySection() {
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
             From Medical Diagnosis to
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> AI Prescription</span>
+            <span className="bg-gradient-to-r from-blue-600 to-cyan-400 bg-clip-text text-transparent"> AI Prescription</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Just as doctors diagnose illnesses and prescribe treatments, we diagnose business inefficiencies and prescribe AI-powered solutions that drive transformation.

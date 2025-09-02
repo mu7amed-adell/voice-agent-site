@@ -63,7 +63,7 @@ export default function AboutSection() {
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
                 Pioneering AI Solutions for
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Modern Businesses</span>
+                <span className="bg-gradient-to-r from-blue-600 to-cyan-400 bg-clip-text text-transparent"> Modern Businesses</span>
               </motion.h2>
 
               <motion.p

@@ -93,9 +93,9 @@ export default function FinalCTASection() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           Transform Your Business with
-          <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-600 to-cyan-400 bg-clip-text text-transparent">
             {' '}
-            AI Medicine
+            NeuraCure
           </span>
         </motion.h2>
 
@@ -149,7 +149,7 @@ export default function FinalCTASection() {
             className="w-full sm:w-auto min-w-[240px]"
           >
             <Calendar className="w-5 h-5 mr-2" />
-            Book Free AI Diagnosis
+            Book Free Diagnosis Session
             <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
         </motion.div>
@@ -166,13 +166,13 @@ export default function FinalCTASection() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Copyright */}
           <div className="text-xs text-gray-500 dark:text-gray-400">
-            Built by 
-            <a 
-              href="https://ismaiel.vercel.app" 
-              target="_blank" 
+                        Powered by
+            <a
+              href="https://ismaiel.vercel.app"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 dark:text-blue-400 hover:underline"
-            > Ismaiel
+            > NeuraCure
             </a>
           </div>
           {/* LinkedIn Link */}
@@ -201,7 +201,7 @@ export default function FinalCTASection() {
           <div className="flex items-center justify-between">
             <div className="flex-1">
               <div className="text-sm font-semibold text-gray-900 dark:text-white">
-                Book Free AI Diagnosis
+                Book Free Diagnosis Session
               </div>
               <div className="text-xs text-gray-600 dark:text-gray-400">
                 Transform your business today
@@ -217,7 +217,7 @@ export default function FinalCTASection() {
               }}
               className="ml-4"
             >
-              Book Now
+              Book Free Diagnosis
             </Button>
           </div>
         </motion.div>
